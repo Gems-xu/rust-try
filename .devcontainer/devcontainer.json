@@ -4,9 +4,9 @@
 	"name": "Rust Sample",
 	// SSH server
 	"features": {
-    		"ghcr.io/devcontainers/features/sshd:1": {
-        		"version": "latest"
-    		}
+    	"ghcr.io/devcontainers/features/sshd:1": {
+        	"version": "latest"
+    	}
 	},
 	"build": {
 		"dockerfile": "Dockerfile",
