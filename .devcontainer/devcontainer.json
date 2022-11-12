@@ -1,6 +1,13 @@
 // For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
 // https://github.com/microsoft/vscode-dev-containers/tree/v0.195.0/containers/rust
 {
+	// SSH server
+	"features": {
+    		"ghcr.io/devcontainers/features/sshd:1": {
+        		"version": "latest"
+    		}
+	},
+	
 	"name": "Rust Sample",
 	"build": {
 		"dockerfile": "Dockerfile",
@@ -35,13 +42,6 @@
 				"serayuzgur.crates"
 			]
 		}
-	},
-	
-	// SSH server
-	"features": {
-    		"ghcr.io/devcontainers/features/sshd:1": {
-        		"version": "latest"
-    		}
 	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
